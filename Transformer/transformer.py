@@ -1,9 +1,14 @@
 """
 
-The transformer architecture
+The transformer architecture.
 
-Paper is found at
+Link to paper
     https://arxiv.org/abs/1706.03762
+Reference(s)
+    https://github.com/hkproj/pytorch-transformer/blob/main/model.py
+Note!
+    For the residual connection, this implementation applies layer normalization 
+    AFTER the 'multi-head attention' and 'feed-forward network' layers, not BEFORE.
 """
 
 import torch
